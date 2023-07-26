@@ -51,9 +51,9 @@ message ue_info_m{
     required int32 rnti=1;
 
     // specific ue's measurements (these will come from the gnb)
-    optional float meas_type_1=2;
-    optional float meas_type_2=3;
-    optional float meas_type_3=4;
+    optional float rsrp=2;
+    optional float ber=3;
+    optional float mcs=4;
 
     // specific ue's propoerties (these will be set by the xapp and sent to gnb)
     optional bool prop_1 = 5;
